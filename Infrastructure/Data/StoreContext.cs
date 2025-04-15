@@ -23,7 +23,7 @@ namespace Infrastructure.Data
             {
                 foreach (var entityType in modelBuilder.Model.GetEntityTypes())
                 {
-                    var properties = entityType.GetProperties().Where(p=>p.PropertyInfo.PropertyType == typeof(decimal));
+                    var properties = entityType.GetProperties().Where(p => p.PropertyInfo.PropertyType == typeof(decimal));
 
                     foreach (var property in properties)
                     {
@@ -33,3 +33,4 @@ namespace Infrastructure.Data
             }
         }
     }
+}
