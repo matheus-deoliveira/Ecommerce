@@ -1,23 +1,30 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [NavBarComponent]
+  imports: [NavBarComponent, CommonModule]
 })
 export class AppComponent implements OnInit {
   title = 'Ecommerce';
+  products: any[] = [];
 
-  constructor(public http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('https://localhost:5001/api/Products/products').subscribe({
-      next: (response) => console.log(response),
-      error: (error) => console.error(error)
+    this.http.get<any[]>('https://localhost:5001/api/Products/products').subscribe({
+      next: (response) => {
+        console.log('Resposta recebida:', response);
+        this.products = response;
+      },
+      error: (error) => {
+        console.error('Erro na requisição:', error);
+      }
     });
   }
 }
