@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
 import { CommonModule } from '@angular/common';
+import { IProduct } from './models/product';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +13,12 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent implements OnInit {
   title = 'Ecommerce';
-  products: any[] = [];
+  products: IProduct[] = [];
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('https://localhost:5001/api/products').subscribe({
+    this.http.get<IProduct[]>('https://localhost:5001/api/products').subscribe({
       next: (response) => {
         console.log('Resposta recebida:', response);
         this.products = response;
