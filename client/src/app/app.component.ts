@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('https://localhost:5001/api/Products/products').subscribe({
+    this.http.get<any[]>('https://localhost:5001/api/products').subscribe({
       next: (response) => {
         console.log('Resposta recebida:', response);
         this.products = response;
