@@ -4,7 +4,7 @@
     "Name": "iPhone 15",
     "Description": "Smartphone Apple com tela OLED e câmera avançada.",
     "Price": 7999.99,
-    "PictureUrl": "https://example.com/images/iphone15.jpg",
+    "PictureUrl": "images/products/iphone15.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 1
   },
@@ -13,7 +13,7 @@
     "Name": "MacBook Air M2",
     "Description": "Notebook Apple com chip M2 e tela Retina.",
     "Price": 9999.99,
-    "PictureUrl": "https://example.com/images/macbook_air_m2.jpg",
+    "PictureUrl": "images/products/macbook_air_m2.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 1
   },
@@ -22,7 +22,7 @@
     "Name": "Samsung Galaxy S23",
     "Description": "Smartphone Samsung com câmera tripla e display AMOLED.",
     "Price": 5999.99,
-    "PictureUrl": "https://example.com/images/samsung_galaxy_s23.jpg",
+    "PictureUrl": "images/products/samsung_galaxy_s23.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 2
   },
@@ -31,7 +31,7 @@
     "Name": "Samsung Smart TV 55\"",
     "Description": "Smart TV 4K Samsung com HDR e sistema Tizen.",
     "Price": 3499.99,
-    "PictureUrl": "https://example.com/images/samsung_tv_55.jpg",
+    "PictureUrl": "images/products/samsung_tv_55.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 2
   },
@@ -40,7 +40,7 @@
     "Name": "Nike Air Max",
     "Description": "Tênis esportivo Nike com amortecimento Air.",
     "Price": 799.99,
-    "PictureUrl": "https://example.com/images/nike_air_max.jpg",
+    "PictureUrl": "images/products/nike_air_max.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 3
   },
@@ -49,7 +49,7 @@
     "Name": "Nike Camiseta Dry-Fit",
     "Description": "Camiseta esportiva Nike com tecnologia de secagem rápida.",
     "Price": 199.99,
-    "PictureUrl": "https://example.com/images/nike_camiseta_dryfit.jpg",
+    "PictureUrl": "images/products/nike_camiseta_dryfit.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 3
   },
@@ -58,7 +58,7 @@
     "Name": "Adidas Ultraboost",
     "Description": "Tênis Adidas com amortecimento Boost.",
     "Price": 899.99,
-    "PictureUrl": "https://example.com/images/adidas_ultraboost.jpg",
+    "PictureUrl": "images/products/adidas_ultraboost.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 4
   },
@@ -67,7 +67,7 @@
     "Name": "Adidas Jaqueta Esportiva",
     "Description": "Jaqueta Adidas leve e confortável para atividades físicas.",
     "Price": 349.99,
-    "PictureUrl": "https://example.com/images/adidas_jaqueta.jpg",
+    "PictureUrl": "images/products/adidas_jaqueta.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 4
   },
@@ -76,7 +76,7 @@
     "Name": "Nestlé Chocolate Alpino",
     "Description": "Chocolate Alpino ao leite da Nestlé.",
     "Price": 19.99,
-    "PictureUrl": "https://example.com/images/nestle_chocolate_alpino.jpg",
+    "PictureUrl": "images/products/nestle_chocolate_alpino.jpg",
     "ProductTypeId": 3,
     "ProductBrandId": 5
   },
@@ -85,7 +85,7 @@
     "Name": "Nestlé Leite em Pó",
     "Description": "Leite em pó integral da Nestlé.",
     "Price": 29.99,
-    "PictureUrl": "https://example.com/images/nestle_leite_po.jpg",
+    "PictureUrl": "images/products/nestle_leite_po.jpg",
     "ProductTypeId": 3,
     "ProductBrandId": 5
   },
@@ -94,7 +94,7 @@
     "Name": "Coca-Cola Lata 350ml",
     "Description": "Refrigerante de cola clássico da Coca-Cola.",
     "Price": 4.99,
-    "PictureUrl": "https://example.com/images/coca_cola_lata.jpg",
+    "PictureUrl": "images/products/coca_cola_lata.jpg",
     "ProductTypeId": 3,
     "ProductBrandId": 6
   },
@@ -103,7 +103,7 @@
     "Name": "Coca-Cola Zero 2L",
     "Description": "Refrigerante de cola sem açúcar da Coca-Cola.",
     "Price": 9.99,
-    "PictureUrl": "https://example.com/images/coca_cola_zero.jpg",
+    "PictureUrl": "images/products/coca_cola_zero.jpg",
     "ProductTypeId": 3,
     "ProductBrandId": 6
   }
