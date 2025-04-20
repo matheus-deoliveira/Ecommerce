@@ -34,9 +34,16 @@ namespace Infrastructure.Data
             return await ApplySpecification(spec).ToListAsync();
         }
 
-        private IQueryable<T> ApplySpecification(ISpecification<T> spec)
+        public async Task<int> CountAsync(ISpecification<T> spec)
         {
-            return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
+            // Para contagem, não aplicamos paginação nem ordenação
+            var query = SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec, true);
+            return await query.CountAsync();
+        }
+
+        private IQueryable<T> ApplySpecification(ISpecification<T> spec, bool forCount = false)
+        {
+            return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec, forCount);
         }
     }
 }
