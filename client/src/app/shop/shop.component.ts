@@ -1,7 +1,6 @@
-import { Component, OnInit, Inject, inject, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { IProduct } from '../shared/models/product';
 import { ShopService } from './shop.service';
-import { error } from 'console';
 import { ProductItemComponent } from "./product-item/product-item.component";
 import { CommonModule } from '@angular/common';
 import { IProductBrand } from '../shared/models/productBrand';
