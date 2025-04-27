@@ -10,7 +10,7 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [NavBarComponent, CommonModule, ShopComponent, HomeModule, RouterOutlet]
+  imports: [NavBarComponent, CommonModule, HomeModule, RouterOutlet]
 })
 export class AppComponent implements OnInit {
   title = 'Ecommerce';

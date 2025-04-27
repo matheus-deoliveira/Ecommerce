@@ -41,7 +41,7 @@ namespace API.Controllers
                 data));
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("product/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)

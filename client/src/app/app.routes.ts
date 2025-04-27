@@ -5,7 +5,7 @@ import { ProductDetailsComponent } from './shop/product-details/product-details.
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'shop', component: ShopComponent },
+    { path: 'shop', component: ShopComponent, loadChildren: () => import('./shop/shop.module').then(mod => mod.ShopModule) },
     { path: 'shop/:id', component: ProductDetailsComponent },
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
